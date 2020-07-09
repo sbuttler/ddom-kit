@@ -73,7 +73,7 @@ class EmpiricalRiskMinimizationNewsvendor(BaseNewsvendor):
         self : EmpiricalRiskMinimizationNewsvendor
             Fitted estimator
         """
-        X, y = self._validate_data(X, y, multi_output=True)
+        #X, y = self._validate_data(X, y, multi_output=True)
 
         if y.ndim == 1:
             y = np.reshape(y, (-1, 1))
